@@ -1,0 +1,1967 @@
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
+<script>
+	$('.monitoring_section .montBlock').slick({
+		arrows: false,
+		adaptiveHeight: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		swipe: false
+
+});
+$('.monitoring_section .tabsList li[data-slide]').click(function(e) {
+	// alert('Отработало');
+	var tabcontent = $(".monitoring_section .tabsList li");
+  
+
+	for (i = 0; i < tabcontent.length; i++) 
+	{ 
+		$(tabcontent[i]).removeClass('active_tab');
+		
+		
+	}
+	e.preventDefault();
+	var slideno = $(this).data('slide');
+	$('.monitoring_section .montBlock').slick('slickGoTo', slideno - 1);
+	$(this).addClass('active_tab');
+
+  });
+</script>
+<!DOCTYPE html>
+<html>
+	<head>
+					<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<!-- <title>Raim RolePlay</title> -->
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+		
+  
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/overhang.min.css">
+		<link rel="stylesheet" href="css/mains.css">
+		<link rel="stylesheet" href="css/media.css">
+		<link rel="shortcut icon" href="images/favicon.png" type="image/png"/>
+		
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+	<title>Мониторинг - Raim RolePlay</title>
+	</head>
+		<body class="donate_page">
+								<header>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2 col-md-4 logo_header">
+						<img src="images/logo.png" alt="">
+					</div>
+					<div class="col-lg-10 col-md-8 col-sm-12 menu">
+					
+						<nav>
+							<a href="monitoring.html#" class="mobile_nav">
+								<span></span>
+							</a>
+							<ul class="col-lg-10 col-md-12 nav_list">
+																	<li ><a href="index.html">Главная</a></li>
+																<li><a href="http://forum.Raim-rp.com/">Форум</a></li>
+								
+																										<li ><a href="donate.html">Магазин</a></li>
+																	
+
+																	<li ><a href="play.html">Как начать?</a></li>
+																									<li ><a href="map.html">Карта</a></li>
+																									<li class="active"><a href="monitoring.html">ТОП</a></li>
+																<li><a href="https://vk.com/Raimsamp">Новости</a></li>
+							</ul>
+														<div class="col-lg-2 col-md-6 col-sm-4 col-4 login_block">
+								<div class="login_btn">Войти</div>	
+							</div>
+													</nav>
+					</div>
+				</div>
+			</div>
+		</header>
+		
+		
+<section class="monitoring_section">
+	<div class="container">
+		<div class="row">
+		<div class="headerSection">
+				
+				<div class="titlePage">
+					Мониторинг игроков
+					<div class="break"></div>
+				</div>
+			</div>
+			<div class="col-xl-12">
+				<ul class="tabsList">
+					<li class="navLink active_tab" data-slide="1"  >Долгожители <div class="circle"></div></li>
+					<li class="navLink" data-slide="2"  >Богатейшие <div class="circle"></div></li>
+					
+					<li class="navLink" data-slide="3" >Законопослушные <div class="circle"></div></li>
+					<li class="navLink" data-slide="4" >Выполненные квесты <div class="circle"></div></li>
+				</ul>
+				<div class="montBlock" >
+					<div class="tab_mont">
+						<div class="__tabs ">
+							<ul class="_head">
+								<li class="flex-1">
+									Ник
+								</li>
+								<li class="flex-1">
+									Фракция
+								</li>
+								<li class="flex-1">
+									Должность
+								</li>
+								<li class="flex-1">
+									Уровень
+								</li>
+								<li class="flex-1">
+									Статус
+								</li>
+							</ul>
+														
+							<ul class="_content">
+																<li>
+									<div class="flex-1">Harya_Washington</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">40</div>
+									<div class="flex-1">
+																					Не в игре
+																			</div>
+								</li>
+																<li>
+									<div class="flex-1">Sheih_Gambino</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">33</div>
+									<div class="flex-1">
+																					Не в игре
+																			</div>
+								</li>
+																<li>
+									<div class="flex-1">Edward_Mironov</div>
+									<div class="flex-1">
+																					Больница
+										 
+									</div>
+									<div class="flex-1">
+											
+											Глав. врач
+										 
+									</div>
+									<div class="flex-1">27</div>
+									<div class="flex-1">
+																					Не в игре
+																			</div>
+								</li>
+																<li>
+									<div class="flex-1">Nikolay_Dios</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">26</div>
+									<div class="flex-1">
+																					Не в игре
+																			</div>
+								</li>
+																<li>
+									<div class="flex-1">General_Esdeath</div>
+									<div class="flex-1">
+																					Yakuza
+										 
+									</div>
+									<div class="flex-1">
+											
+											Сингиин
+										 
+									</div>
+									<div class="flex-1">25</div>
+									<div class="flex-1">
+																					Не в игре
+																			</div>
+								</li>
+																<li>
+									<div class="flex-1">Shini_Desu</div>
+									<div class="flex-1">
+																					Russian Mafia
+										 
+									</div>
+									<div class="flex-1">
+											
+											Шнырь
+										 
+									</div>
+									<div class="flex-1">22</div>
+									<div class="flex-1">
+																					Не в игре
+																			</div>
+								</li>
+																<li>
+									<div class="flex-1">Carl_Brigante</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">22</div>
+									<div class="flex-1">
+																					Не в игре
+																			</div>
+								</li>
+																<li>
+									<div class="flex-1">Tony_Barrera</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">22</div>
+									<div class="flex-1">
+																					Не в игре
+																			</div>
+								</li>
+																<li>
+									<div class="flex-1">Kirill_Blazquez</div>
+									<div class="flex-1">
+																					The Vagos Gang
+										 
+									</div>
+									<div class="flex-1">
+											
+											Авторитет
+										 
+									</div>
+									<div class="flex-1">21</div>
+									<div class="flex-1">
+																					Не в игре
+																			</div>
+								</li>
+																<li>
+									<div class="flex-1">John_Wick</div>
+									<div class="flex-1">
+																					Yakuza
+										 
+									</div>
+									<div class="flex-1">
+											
+											Вакагасира
+										 
+									</div>
+									<div class="flex-1">21</div>
+									<div class="flex-1">
+																					Не в игре
+																			</div>
+								</li>
+																<li>
+									<div class="flex-1">Philip_Bedrosovich</div>
+									<div class="flex-1">
+																					Мэрия
+										 
+									</div>
+									<div class="flex-1">
+											
+											Адвокат
+										 
+									</div>
+									<div class="flex-1">21</div>
+									<div class="flex-1">
+																					Не в игре
+																			</div>
+								</li>
+																<li>
+									<div class="flex-1">Sem_Gorsia</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">21</div>
+									<div class="flex-1">
+																					Не в игре
+																			</div>
+								</li>
+																<li>
+									<div class="flex-1">Emilio_Washington</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">20</div>
+									<div class="flex-1">
+																					Не в игре
+																			</div>
+								</li>
+																<li>
+									<div class="flex-1">Reiner_Ghost</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">20</div>
+									<div class="flex-1">
+																					Не в игре
+																			</div>
+								</li>
+																<li>
+									<div class="flex-1">Collin_Howl</div>
+									<div class="flex-1">
+																					Yakuza
+										 
+									</div>
+									<div class="flex-1">
+											
+											ЧонГунгЩон
+										 
+									</div>
+									<div class="flex-1">20</div>
+									<div class="flex-1">
+																					Не в игре
+																			</div>
+								</li>
+																<li>
+									<div class="flex-1">Joseph_Custom</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">19</div>
+									<div class="flex-1">
+																					Не в игре
+																			</div>
+								</li>
+																<li>
+									<div class="flex-1">Diana_Syvorova</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">19</div>
+									<div class="flex-1">
+																					Не в игре
+																			</div>
+								</li>
+																<li>
+									<div class="flex-1">Albucinio_Cambrussa</div>
+									<div class="flex-1">
+																					La Cosa Nostra
+										 
+									</div>
+									<div class="flex-1">
+											
+											Дон
+										 
+									</div>
+									<div class="flex-1">19</div>
+									<div class="flex-1">
+																					В игре
+																			</div>
+								</li>
+																<li>
+									<div class="flex-1">Lesya_Summerfield</div>
+									<div class="flex-1">
+																					Russian Mafia
+										 
+									</div>
+									<div class="flex-1">
+											
+											Босяк
+										 
+									</div>
+									<div class="flex-1">19</div>
+									<div class="flex-1">
+																					Не в игре
+																			</div>
+								</li>
+																<li>
+									<div class="flex-1">Mathias_Washington</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">19</div>
+									<div class="flex-1">
+																					Не в игре
+																			</div>
+								</li>
+																<li>
+									<div class="flex-1">Shurik_Vaimov</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">18</div>
+									<div class="flex-1">
+																					Не в игре
+																			</div>
+								</li>
+																<li>
+									<div class="flex-1">Ksenia_Asakura</div>
+									<div class="flex-1">
+																					Yakuza
+										 
+									</div>
+									<div class="flex-1">
+											
+											Вакагасира
+										 
+									</div>
+									<div class="flex-1">18</div>
+									<div class="flex-1">
+																					Не в игре
+																			</div>
+								</li>
+																<li>
+									<div class="flex-1">Hiruzen_Sarutobi</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">18</div>
+									<div class="flex-1">
+																					Не в игре
+																			</div>
+								</li>
+																<li>
+									<div class="flex-1">Kristall_Winius</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">18</div>
+									<div class="flex-1">
+																					Не в игре
+																			</div>
+								</li>
+																<li>
+									<div class="flex-1">Alex_Reztor</div>
+									<div class="flex-1">
+																					The Rifa Gang
+										 
+									</div>
+									<div class="flex-1">
+											
+											Санчоуз
+										 
+									</div>
+									<div class="flex-1">18</div>
+									<div class="flex-1">
+																					Не в игре
+																			</div>
+								</li>
+																<li>
+									<div class="flex-1">Solomon_Responsive</div>
+									<div class="flex-1">
+																					The Rifa Gang
+										 
+									</div>
+									<div class="flex-1">
+											
+											Басота
+										 
+									</div>
+									<div class="flex-1">18</div>
+									<div class="flex-1">
+																					В игре
+																			</div>
+								</li>
+																<li>
+									<div class="flex-1">Ronnie_Seymour</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">17</div>
+									<div class="flex-1">
+																					Не в игре
+																			</div>
+								</li>
+																<li>
+									<div class="flex-1">Shamanije_Hokage</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">17</div>
+									<div class="flex-1">
+																					Не в игре
+																			</div>
+								</li>
+																<li>
+									<div class="flex-1">Madara_Uchiha</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">17</div>
+									<div class="flex-1">
+																					Не в игре
+																			</div>
+								</li>
+																<li>
+									<div class="flex-1">Danil_Ryasnov</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">
+																					Безработный
+										 
+									</div>
+									<div class="flex-1">17</div>
+									<div class="flex-1">
+																					Не в игре
+																			</div>
+								</li>
+																
+							</ul>
+						</div>
+					</div>
+					<div class="tab_mont">
+					<div class="__tabs">
+						<ul class="_head">
+							<li class="flex-1">
+								Ник
+							</li>
+							<li class="flex-1">
+								Уровень
+							</li>
+							<li class="flex-1">
+								Состояние
+							</li>
+						
+							<li class="flex-1">
+								Статус
+							</li>
+						</ul>
+						
+						
+						<ul class="_content">
+														<li>
+								<div class="flex-1">Jesus_Zlobin</div>
+								<div class="flex-1">
+									9
+								</div>
+								<div class="flex-1">
+									54396000
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Cowboy_Unwain</div>
+								<div class="flex-1">
+									10
+								</div>
+								<div class="flex-1">
+									40510300
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Cunamiwe_Unwain</div>
+								<div class="flex-1">
+									9
+								</div>
+								<div class="flex-1">
+									19423902
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Kirill_Blazquez</div>
+								<div class="flex-1">
+									21
+								</div>
+								<div class="flex-1">
+									16893945
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Ramplaze_Responsive</div>
+								<div class="flex-1">
+									17
+								</div>
+								<div class="flex-1">
+									14060000
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Devil_Clemento</div>
+								<div class="flex-1">
+									11
+								</div>
+								<div class="flex-1">
+									13966002
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Young_Monkey</div>
+								<div class="flex-1">
+									12
+								</div>
+								<div class="flex-1">
+									10473424
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Aspud_Miller</div>
+								<div class="flex-1">
+									17
+								</div>
+								<div class="flex-1">
+									7065000
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Igor_Lighter</div>
+								<div class="flex-1">
+									9
+								</div>
+								<div class="flex-1">
+									6542097
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Evgeha_Washington</div>
+								<div class="flex-1">
+									5
+								</div>
+								<div class="flex-1">
+									6265416
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Carl_Brigante</div>
+								<div class="flex-1">
+									22
+								</div>
+								<div class="flex-1">
+									6137689
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Andrea_Clemento</div>
+								<div class="flex-1">
+									3
+								</div>
+								<div class="flex-1">
+									5996634
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Bomj_Valera</div>
+								<div class="flex-1">
+									12
+								</div>
+								<div class="flex-1">
+									5892650
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Nikolay_Dios</div>
+								<div class="flex-1">
+									26
+								</div>
+								<div class="flex-1">
+									5451426
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Karina_Kril</div>
+								<div class="flex-1">
+									6
+								</div>
+								<div class="flex-1">
+									5367185
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Hugo_Clemento</div>
+								<div class="flex-1">
+									7
+								</div>
+								<div class="flex-1">
+									4698434
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Kristall_Winius</div>
+								<div class="flex-1">
+									18
+								</div>
+								<div class="flex-1">
+									4658067
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Ivan_Luffe</div>
+								<div class="flex-1">
+									2
+								</div>
+								<div class="flex-1">
+									4499866
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Robert_Redford</div>
+								<div class="flex-1">
+									16
+								</div>
+								<div class="flex-1">
+									4497316
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">David_Search</div>
+								<div class="flex-1">
+									13
+								</div>
+								<div class="flex-1">
+									3983436
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Harya_Washington</div>
+								<div class="flex-1">
+									40
+								</div>
+								<div class="flex-1">
+									3828583
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Lyuda_Rovnaya</div>
+								<div class="flex-1">
+									5
+								</div>
+								<div class="flex-1">
+									3752964
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Arkadiy_Kuzmich</div>
+								<div class="flex-1">
+									7
+								</div>
+								<div class="flex-1">
+									3711711
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Soldier_Synce</div>
+								<div class="flex-1">
+									6
+								</div>
+								<div class="flex-1">
+									3098063
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Dima_Sadrenov</div>
+								<div class="flex-1">
+									17
+								</div>
+								<div class="flex-1">
+									2811493
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Hiruzen_Sarutobi</div>
+								<div class="flex-1">
+									18
+								</div>
+								<div class="flex-1">
+									2791790
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Sheih_Gambino</div>
+								<div class="flex-1">
+									33
+								</div>
+								<div class="flex-1">
+									2756323
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Aladdin_Moralez</div>
+								<div class="flex-1">
+									13
+								</div>
+								<div class="flex-1">
+									2711641
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Maksimka_Summerfield</div>
+								<div class="flex-1">
+									14
+								</div>
+								<div class="flex-1">
+									2556959
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Polly_Fragmachine</div>
+								<div class="flex-1">
+									11
+								</div>
+								<div class="flex-1">
+									2248429
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+													</ul>
+					</div></div>
+					<div class="tab_mont">
+					<div class="__tabs">
+						<ul class="_head">
+							<li class="flex-1">
+								Ник
+							</li>
+							<li class="flex-1">
+								Уровень
+							</li>
+							<li class="flex-1">
+								Законопослушность
+							</li>
+						
+							<li class="flex-1">
+								Статус
+							</li>
+						</ul>
+						
+						
+						<ul class="_content">
+														<li>
+								<div class="flex-1">Ignat_Kril</div>
+								<div class="flex-1">
+									9
+								</div>
+								<div class="flex-1">
+									100
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Samuel_Carter</div>
+								<div class="flex-1">
+									16
+								</div>
+								<div class="flex-1">
+									100
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">William_Esse</div>
+								<div class="flex-1">
+									11
+								</div>
+								<div class="flex-1">
+									100
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Vincent_Baltassare</div>
+								<div class="flex-1">
+									12
+								</div>
+								<div class="flex-1">
+									100
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">William_Colman</div>
+								<div class="flex-1">
+									8
+								</div>
+								<div class="flex-1">
+									100
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Nelo_Mails</div>
+								<div class="flex-1">
+									10
+								</div>
+								<div class="flex-1">
+									100
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Ryiochi_Gato</div>
+								<div class="flex-1">
+									9
+								</div>
+								<div class="flex-1">
+									100
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Jeysen_Invader</div>
+								<div class="flex-1">
+									9
+								</div>
+								<div class="flex-1">
+									100
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Giuseppe_Baritono</div>
+								<div class="flex-1">
+									12
+								</div>
+								<div class="flex-1">
+									100
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Alan_Magomedov</div>
+								<div class="flex-1">
+									9
+								</div>
+								<div class="flex-1">
+									100
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Hit_Muller</div>
+								<div class="flex-1">
+									9
+								</div>
+								<div class="flex-1">
+									100
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Andy_Nom</div>
+								<div class="flex-1">
+									9
+								</div>
+								<div class="flex-1">
+									100
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Kirill_Clement</div>
+								<div class="flex-1">
+									8
+								</div>
+								<div class="flex-1">
+									100
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Dmtiry_Leontev</div>
+								<div class="flex-1">
+									10
+								</div>
+								<div class="flex-1">
+									100
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Yankee_Higa</div>
+								<div class="flex-1">
+									12
+								</div>
+								<div class="flex-1">
+									100
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Sem_Gorsia</div>
+								<div class="flex-1">
+									21
+								</div>
+								<div class="flex-1">
+									100
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Donald_Malphurs</div>
+								<div class="flex-1">
+									12
+								</div>
+								<div class="flex-1">
+									100
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Iliyaus_Grand</div>
+								<div class="flex-1">
+									13
+								</div>
+								<div class="flex-1">
+									100
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Don_Salamon</div>
+								<div class="flex-1">
+									10
+								</div>
+								<div class="flex-1">
+									100
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">El_Grasso</div>
+								<div class="flex-1">
+									12
+								</div>
+								<div class="flex-1">
+									100
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Galderian_Birgen</div>
+								<div class="flex-1">
+									13
+								</div>
+								<div class="flex-1">
+									100
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Jon_Holp</div>
+								<div class="flex-1">
+									8
+								</div>
+								<div class="flex-1">
+									100
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Salvatore_Maranzano</div>
+								<div class="flex-1">
+									13
+								</div>
+								<div class="flex-1">
+									100
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Sasha_Nikishcov</div>
+								<div class="flex-1">
+									13
+								</div>
+								<div class="flex-1">
+									100
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Ragnar_Lothbrok</div>
+								<div class="flex-1">
+									17
+								</div>
+								<div class="flex-1">
+									100
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Aspud_Miller</div>
+								<div class="flex-1">
+									17
+								</div>
+								<div class="flex-1">
+									100
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Nikola_Miller</div>
+								<div class="flex-1">
+									8
+								</div>
+								<div class="flex-1">
+									100
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Dmitriy_Scarlet</div>
+								<div class="flex-1">
+									10
+								</div>
+								<div class="flex-1">
+									100
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Stich_Gambino</div>
+								<div class="flex-1">
+									17
+								</div>
+								<div class="flex-1">
+									100
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Ralof_Stormcloak</div>
+								<div class="flex-1">
+									8
+								</div>
+								<div class="flex-1">
+									100
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+													</ul>
+					</div>
+					</div>
+					<div class="tab_mont">
+					<div class="__tabs">
+						<ul class="_head">
+							<li class="flex-1">
+								Ник
+							</li>
+							<li class="flex-1">
+								Уровень
+							</li>
+							<li class="flex-1">
+								Выполнено квестов
+							</li>
+						
+							<li class="flex-1">
+								Статус
+							</li>
+						</ul>
+						
+						
+						<ul class="_content">
+														<li>
+								<div class="flex-1">Albucinio_Cambrussa</div>
+								<div class="flex-1">
+									19
+								</div>
+								<div class="flex-1">
+									50
+								</div>
+								
+								<div class="flex-1">
+																			В игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Stas_Karpov</div>
+								<div class="flex-1">
+									13
+								</div>
+								<div class="flex-1">
+									45
+								</div>
+								
+								<div class="flex-1">
+																			В игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Nikolay_Dios</div>
+								<div class="flex-1">
+									26
+								</div>
+								<div class="flex-1">
+									44
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Philip_Bedrosovich</div>
+								<div class="flex-1">
+									21
+								</div>
+								<div class="flex-1">
+									42
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">David_Venzor</div>
+								<div class="flex-1">
+									16
+								</div>
+								<div class="flex-1">
+									29
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Arshavir_Washington</div>
+								<div class="flex-1">
+									11
+								</div>
+								<div class="flex-1">
+									29
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Angel_Underground</div>
+								<div class="flex-1">
+									15
+								</div>
+								<div class="flex-1">
+									29
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Ragnar_Lothbrok</div>
+								<div class="flex-1">
+									17
+								</div>
+								<div class="flex-1">
+									29
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Ozzy_Baretto</div>
+								<div class="flex-1">
+									14
+								</div>
+								<div class="flex-1">
+									29
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Lion_Sopranno</div>
+								<div class="flex-1">
+									14
+								</div>
+								<div class="flex-1">
+									29
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Danila_Abramov</div>
+								<div class="flex-1">
+									13
+								</div>
+								<div class="flex-1">
+									29
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Iliyaus_Grand</div>
+								<div class="flex-1">
+									13
+								</div>
+								<div class="flex-1">
+									29
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Madara_Uchiha</div>
+								<div class="flex-1">
+									17
+								</div>
+								<div class="flex-1">
+									29
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Bogdan_Zakharenko</div>
+								<div class="flex-1">
+									15
+								</div>
+								<div class="flex-1">
+									29
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">General_Esdeath</div>
+								<div class="flex-1">
+									25
+								</div>
+								<div class="flex-1">
+									28
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Garik_Moralez</div>
+								<div class="flex-1">
+									14
+								</div>
+								<div class="flex-1">
+									28
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Shurik_Vaimov</div>
+								<div class="flex-1">
+									18
+								</div>
+								<div class="flex-1">
+									28
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Naruto_Kiochi</div>
+								<div class="flex-1">
+									12
+								</div>
+								<div class="flex-1">
+									28
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Brandon_Belt</div>
+								<div class="flex-1">
+									11
+								</div>
+								<div class="flex-1">
+									28
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Naruto_Uzumaki</div>
+								<div class="flex-1">
+									14
+								</div>
+								<div class="flex-1">
+									28
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Donald_Malphurs</div>
+								<div class="flex-1">
+									12
+								</div>
+								<div class="flex-1">
+									28
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Collin_Howl</div>
+								<div class="flex-1">
+									20
+								</div>
+								<div class="flex-1">
+									28
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Kirill_Blazquez</div>
+								<div class="flex-1">
+									21
+								</div>
+								<div class="flex-1">
+									28
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Maximilian_Capone</div>
+								<div class="flex-1">
+									15
+								</div>
+								<div class="flex-1">
+									28
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Rimuru_Tempest</div>
+								<div class="flex-1">
+									14
+								</div>
+								<div class="flex-1">
+									28
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Asher_Onfroy</div>
+								<div class="flex-1">
+									14
+								</div>
+								<div class="flex-1">
+									28
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Artyr_Pirohkov</div>
+								<div class="flex-1">
+									17
+								</div>
+								<div class="flex-1">
+									28
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Edward_Mironov</div>
+								<div class="flex-1">
+									27
+								</div>
+								<div class="flex-1">
+									28
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Galderian_Birgen</div>
+								<div class="flex-1">
+									13
+								</div>
+								<div class="flex-1">
+									28
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+														<li>
+								<div class="flex-1">Diana_Syvorova</div>
+								<div class="flex-1">
+									19
+								</div>
+								<div class="flex-1">
+									28
+								</div>
+								
+								<div class="flex-1">
+																			Не в игре
+																	</div>
+							</li>
+													</ul>
+					</div>
+					</div>
+				</div>
+			</div>
+			
+				
+			
+		</div>
+	</div>
+</section>
+		
+				<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 col-md-6 serverInfo">
+						<div class="title">© 2019-2020 Raim-rp.com</div>
+						<div class="desc">GTA SanAndreas в режиме RolePlay</div>
+					</div>
+					<div class="col-lg-4 col-md-6 logo">
+						<img src="images/logo-footer.png" alt="">
+					</div>
+					<div class="col-lg-4 col-md-4 agreement">
+						<div class="title"><a href="Uslovia_polzovania.pdf">Пользовательское соглашение</a></div>
+						<div class="desc"></div>
+						
+					</div>
+				</div>
+			</div>
+		</footer>
+		
+		
+	</body>
+	<div class="modal_wrap">
+					<div class="modal_login">
+				<div class="close_modal close_login">
+					<img src="images/icon_close.png" alt="">
+				</div>
+				<div class="header">
+					Авторизация
+				</div>
+				<div class="content">
+					<form action="https://Raim-rp.com/action/login" method="POST">
+						<input type="hidden" name="_token" value="LOgksyklWTcdC6vewWvTUnXkOVjQqfNqA9gSf9Lg">						<div class="input_wrap">
+							<div class="label">Ваше имя</div>
+							<div class="input_group">
+								<div class="icon"><img src="images/icon_user.png" alt=""></div>
+								<input type="text" name="name" placeholder="Nick_Name">
+							</div>
+						</div>
+						<div class="input_wrap">
+							<div class="label">Пароль</div>
+							<div class="input_group">
+								<div class="icon"><img src="images/icon_password.png" alt=""></div>
+								<input type="password" name="password" placeholder="••••••">
+							</div>
+						</div>
+						<div class="g-recaptcha"  data-sitekey="6Lf7LcEUAAAAAL0OqkOQC0kqejHQ1PXX4N7g_sIV"></div>
+						<div class="links">
+							<a href="monitoring.html#" class="recovery_link">Забыли пароль?</a>
+						</div>
+						<button class="btn_go">
+							Авторизация
+						</button>
+					</form>
+					
+				</div>
+			</div>
+			<div class="modal_recovery">
+				<div class="close_modal close_recovery">
+					<img src="images/icon_close.png" alt="">
+				</div>
+				<div class="header">
+					Восстановление пароля
+				</div>
+				<div class="content">
+					<form action="https://Raim-rp.com/action/recovery" method="POST">
+						<input type="hidden" name="_token" value="LOgksyklWTcdC6vewWvTUnXkOVjQqfNqA9gSf9Lg">						<div class="input_wrap">
+							<div class="label">Ваше имя</div>
+							<div class="input_group">
+								<div class="icon"><img src="images/icon_user.png" alt=""></div>
+								<input type="text" name="name" placeholder="Nick_Name">
+							</div>
+						</div>
+						<div class="input_wrap">
+							<div class="label">Почта</div>
+							<div class="input_group">
+								<div class="icon"><img src="images/icon_email.png" alt=""></div>
+								<input type="email" name="email" placeholder="Ваша почта">
+							</div>
+						</div>
+						<div class="g-recaptcha"  data-sitekey="6Lf7LcEUAAAAAL0OqkOQC0kqejHQ1PXX4N7g_sIV"></div>
+						<div class="links">
+							<a href="monitoring.html" class="auth_links">Вспомнили пароль?</a>
+						</div>
+						<button class="btn_go">
+							Сменить
+						</button>
+					</form>
+				</div>
+			</div>
+				</div>
+		
+
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+		<script src="js/overhang.min.js"></script>
+		<script src="js/form.js"></script>
+		<script src="js/main.js"></script>
+		
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
+<script>
+	$('.monitoring_section .montBlock').slick({
+		arrows: false,
+		adaptiveHeight: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		swipe: false
+
+});
+$('.monitoring_section .tabsList li[data-slide]').click(function(e) {
+	// alert('Отработало');
+	var tabcontent = $(".monitoring_section .tabsList li");
+  
+
+	for (i = 0; i < tabcontent.length; i++) 
+	{ 
+		$(tabcontent[i]).removeClass('active_tab');
+		
+		
+	}
+	e.preventDefault();
+	var slideno = $(this).data('slide');
+	$('.monitoring_section .montBlock').slick('slickGoTo', slideno - 1);
+	$(this).addClass('active_tab');
+
+  });
+</script>
+</html>
